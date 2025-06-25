@@ -1,0 +1,40 @@
+*.tar
+*.tar.*
+*.jar
+*.exe
+*.msi
+*.zip
+*.tgz
+*.log
+*.log.*
+*.sig
+
+# Файлы Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# Файлы IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Виртуальное окружение
+venv/
+env/
+.venv/
+
+# Конфиденциальные данные
+.env
+*.key
+*.secret
+
+# Логи и временные файлы
+*.log
+*.tmp
+
+pkg/
+src/

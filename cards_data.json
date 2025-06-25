@@ -1,0 +1,314 @@
+[
+    {
+        "name": "Дракон",
+        "attack": 2,
+        "health": 2,
+        "defense": 0,
+        "manacost": 2,
+        "description": "Огненное дыхание",
+        "effect_name": "DamageAdjacent",
+        "effect_params": {
+            "damage": 2
+        },
+        "image": "dragon.png",
+        "type": "creature"
+    },
+    {
+        "name": "Феникс",
+        "attack": 4,
+        "health": 3,
+        "defense": 0,
+        "manacost": 5,
+        "description": "Перерождение с 1 хп",
+        "effect_name": "Rebirth",
+        "image": "phoenix.png",
+        "type": "creature"
+    },
+    {
+        "name": "Вулканический голем",
+        "attack": 1,
+        "health": 5,
+        "defense": 2,
+        "manacost": 3,
+        "description": "Каждый ход +1 урон",
+        "effect_name": "StatBuff",
+        "effect_params": {
+            "attack_bonus": 1,
+            "defense_bonus": 0,
+            "duration": 10
+        },
+        "image": "volcanic_golem.png",
+        "type": "creature"
+    },
+    {
+        "name": "Саламандра",
+        "attack": 3,
+        "health": 1,
+        "defense": 0,
+        "manacost": 0,
+        "description": "Игнорирует броню",
+        "effect_name": "PierceDamage",
+        "effect_params": {
+            "damage": 3
+        },
+        "image": "salamander.png",
+        "type": "creature"
+    },
+    {
+        "name": "Повелитель огня",
+        "attack": 2,
+        "health": 4,
+        "defense": 0,
+        "manacost": 4,
+        "description": "Дает +1 атаку другим огненным существам",
+        "image": "lord_of_fire.png",
+        "type": "creature"
+    },
+    {
+        "name": "Огненный волк",
+        "attack": 3,
+        "health": 3,
+        "defense": 0,
+        "manacost": 3,
+        "description": "Рывок",
+        "image": "fiery_wolf.png",
+        "type": "creature"
+    },
+    {
+        "name": "Пеплоход",
+        "attack": 0,
+        "health": 6,
+        "defense": 0,
+        "manacost": 0,
+        "description": "Наносит урон, равный своему хп, себе и врагу",
+        "image": "peplohod.png",
+        "type": "creature"
+    },
+    {
+        "name": "Громовая птица",
+        "attack": 3,
+        "health": 2,
+        "defense": 0,
+        "manacost": 3,
+        "description": "Молниеносная атака: Бьет первым.",
+        "image": "thunderbird.png",
+        "type": "creature"
+    },
+    {
+        "name": "Воздушный змей",
+        "attack": 1,
+        "health": 4,
+        "defense": 0,
+        "manacost": 1,
+        "description": "Уклонение 50% от атак.",
+        "image": "air_snake.png",
+        "type": "creature"
+    },
+    {
+        "name": "Буревестник",
+        "attack": 2,
+        "health": 3,
+        "defense": 0,
+        "manacost": 2,
+        "description": "Возвращает заклинание в руку при смерти.",
+        "image": "petrel.png",
+        "type": "creature"
+    },
+    {
+        "name": "Сильф",
+        "attack": 1,
+        "health": 1,
+        "defense": 0,
+        "manacost": 0,
+        "description": "Даёт +2🗡 выбранному существу.",
+        "effect_name": "StatBuff",
+        "image": "sylph.png",
+        "type": "creature"
+    },
+    {
+        "name": "Штормовой дракон",
+        "attack": 4,
+        "health": 4,
+        "defense": 0,
+        "manacost": 4,
+        "description": "Атака: Наносит 1 урон всем врагам.",
+        "image": "storm_dragon.png",
+        "type": "creature"
+    },
+    {
+        "name": "Облачный призрак",
+        "attack": 2,
+        "health": 2,
+        "defense": 0,
+        "manacost": 2,
+        "description": "Неуязвим к заклинаниям.",
+        "image": "cloud_ghost.png",
+        "type": "creature"
+    },
+    {
+        "name": "Виверна",
+        "attack": 5,
+        "health": 3,
+        "defense": 0,
+        "manacost": 5,
+        "description": "Яд 1 (после атаки).",
+        "image": "wyvern.png",
+        "type": "creature"
+    },
+    {
+        "name": "Каменный голем",
+        "attack": 2,
+        "health": 7,
+        "defense": 3,
+        "manacost": 2,
+        "description": "Броня 3.",
+        "image": "stone_golem.png",
+        "type": "creature"
+    },
+    {
+        "name": "Энт",
+        "attack": 3,
+        "health": 4,
+        "defense": 0,
+        "manacost": 3,
+        "description": "Призыв: Создает Саженец (0/1).",
+        "image": "ent.png",
+        "type": "creature"
+    },
+    {
+        "name": "Гном-изобретатель",
+        "attack": 1,
+        "health": 3,
+        "defense": 0,
+        "manacost": 1,
+        "description": "Даёт +1🗡 случайному союзнику.",
+        "image": "gnome_inventor.png",
+        "type": "creature"
+    },
+    {
+        "name": "Базелиск",
+        "attack": 3,
+        "health": 3,
+        "defense": 0,
+        "manacost": 3,
+        "description": "Каменный взгляд: Превращает врага в камень (1 ход).",
+        "image": "basilisk.png",
+        "type": "creature"
+    },
+    {
+        "name": "Кротоход",
+        "attack": 4,
+        "health": 1,
+        "defense": 0,
+        "manacost": 4,
+        "description": "Подземный ход: Невидим 1 ход после атаки.",
+        "image": "burrower.png",
+        "type": "creature"
+    },
+    {
+        "name": "Древний дуб",
+        "attack": 2,
+        "health": 8,
+        "defense": 0,
+        "manacost": 0,
+        "description": "Исцеляет 2❤️ себе каждый ход.",
+        "image": "ancient_oak.png",
+        "type": "creature"
+    },
+    {
+        "name": "Грибной король",
+        "attack": 2,
+        "health": 5,
+        "defense": 0,
+        "manacost": 2,
+        "description": "Создает 1/1 Грибняк* при смерти.",
+        "image": "mushroom_king.png",
+        "type": "creature"
+    },
+    {
+        "name": "Песчаный червь",
+        "attack": 5,
+        "health": 4,
+        "defense": 0,
+        "manacost": 5,
+        "description": "Закапывается на 1 ход после атаки.",
+        "image": "sand_worm.png",
+        "type": "creature"
+    },
+    {
+        "name": "Морской змей",
+        "attack": 4,
+        "health": 3,
+        "defense": 0,
+        "manacost": 4,
+        "description": "Может атаковать дважды, но пропускает ход после.",
+        "image": "sea_serpent.png",
+        "type": "creature"
+    },
+    {
+        "name": "Кракен",
+        "attack": 5,
+        "health": 5,
+        "defense": 0,
+        "manacost": 5,
+        "description": "Призыв: Обездвиживает случайное вражеское существо.",
+        "image": "kraken.png",
+        "type": "creature"
+    },
+    {
+        "name": "Русалка",
+        "attack": 2,
+        "health": 3,
+        "defense": 0,
+        "manacost": 2,
+        "description": "Исцеляет 1❤️ всем союзникам каждый ход.",
+        "image": "mermaid.png",
+        "type": "creature"
+    },
+    {
+        "name": "Ледяной дух",
+        "attack": 1,
+        "health": 4,
+        "defense": 0,
+        "manacost": 1,
+        "description": "Заморозка: Атакуемый враг пропускает ход.",
+        "image": "frost_spirit.png",
+        "type": "creature"
+    },
+    {
+        "name": "Титан приливов",
+        "attack": 3,
+        "health": 6,
+        "defense": 0,
+        "manacost": 3,
+        "description": "Волна: Отталкивает врагов на 1 позицию.",
+        "image": "tidal_titan.png",
+        "type": "creature"
+    },
+    {
+        "name": "Медуза",
+        "attack": 2,
+        "health": 2,
+        "defense": 0,
+        "manacost": 0,
+        "description": "Яд 2 (урон в начале хода врага).",
+        "effect_name": "HavePoison",
+        "effect_params": {
+            "cnt_uses": 1,
+            "damage_per_turn": 2,
+            "duration": 1
+        },
+        "image": "medusa.png",
+        "type": "creature"
+    },
+    {
+        "name": "Акула",
+        "attack": 4,
+        "health": 2,
+        "defense": 0,
+        "manacost": 4,
+        "description": "Скрытность: Не может быть целью заклинаний.",
+        "image": "shark.png",
+        "type": "creature"
+    }
+]
