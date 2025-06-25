@@ -5,7 +5,12 @@ from game_objects import GameBoard
 from cards_classes import *
 from start_screen import *
 
-
+"""1654 строчки в проекте"""
+"""Разбиение по разным файлам"""
+"""Использованы ассеты и спрайты"""
+"""Музыка"""
+"""Начальный и конечный экраны"""
+"""Чистый код"""
 def main(hero_paths):
     pygame.init()
     pygame.mixer.init()
