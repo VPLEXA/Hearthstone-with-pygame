@@ -281,7 +281,7 @@ class Creature_card(Base_Card):
             target.take_damage(self.attack)
 
         #звук удара
-        pygame.mixer.Channel(1).play(pygame.mixer.Sound('Game_for_OPD/assets/music/zvuk-napadeniya.mp3'))
+        pygame.mixer.Channel(1).play(pygame.mixer.Sound('assets/music/zvuk-napadeniya.mp3'))
         # Ответный урон 
         self.take_damage(target.attack)
 

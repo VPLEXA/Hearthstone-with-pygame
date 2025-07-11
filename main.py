@@ -4,6 +4,7 @@ from game_config import *
 from game_objects import GameBoard
 from cards_classes import *
 from start_screen import *
+from end_screen import show_game_over_screen
 
 """1654 строчки в проекте"""
 """Разбиение по разным файлам"""
@@ -17,7 +18,7 @@ def main(hero_paths):
     pygame.mixer.set_num_channels(8)
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.FULLSCREEN)
     pygame.display.set_caption('Hearthstone by pygame')
-    pygame.mixer.Channel(0).play(pygame.mixer.Sound('Game_for_OPD/assets/music/2-01 Pull up a Chair.mp3'), loops=-1)
+    pygame.mixer.Channel(0).play(pygame.mixer.Sound('assets/music/2-01 Pull up a Chair.mp3'), loops=-1)
     clock = pygame.time.Clock()
     game_board = GameBoard(hero_paths)
     End_turn_btn = Button(1750, 550, 150, 70, "EndTurn", RED, (255, 100, 100))
@@ -29,6 +30,8 @@ def main(hero_paths):
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
+            
+            keys = pygame.key.get_pressed()
             
             if End_turn_btn.is_clicked(pygame.mouse.get_pos(), event):
                 if not game_board.turn_transition:
@@ -42,6 +45,10 @@ def main(hero_paths):
             if event.type == pygame.MOUSEBUTTONDOWN:
                 if event.button == 1:
                     game_board.handle_mouse_event(screen, event.pos)
+            
+            """Комадна для убийства оппонента"""
+            if keys[pygame.K_k]:
+                show_game_over_screen(screen, "Test")
 
         game_board.update()           # Обновление логики спрайтов
         game_board.draw(screen)       # Отрисовка всех спрайтов

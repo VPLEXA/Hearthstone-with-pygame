@@ -21,7 +21,7 @@ volume = 0.5
 mixer.music.set_volume(volume)
 
 # Загрузка фоновой музыки (если есть)
-pygame.mixer.Channel(0).play(pygame.mixer.Sound('Game_for_OPD/assets/music/2-08 Tabletop Battles.mp3'), loops=-1)  
+pygame.mixer.Channel(0).play(pygame.mixer.Sound('assets/music/2-08 Tabletop Battles.mp3'), loops=-1)  
 
 
 def main_menu():
@@ -123,9 +123,9 @@ def settings_menu():
 
 def select_heroes():
     hero_data = [
-        ("Иллидан", "Game_for_OPD/assets/heroes/illidan.png"),
-        ("Король Лич", "Game_for_OPD/assets/heroes/king_lich.png"),
-        ("Воин", "Game_for_OPD/assets/heroes/warrior.png")
+        ("Иллидан", "assets/heroes/illidan.png"),
+        ("Король Лич", "assets/heroes/king_lich.png"),
+        ("Воин", "assets/heroes/warrior.png")
     ]
 
     hero_images = [pygame.image.load(path) for _, path in hero_data]
